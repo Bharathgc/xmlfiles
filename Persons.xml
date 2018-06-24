@@ -22,7 +22,7 @@
         </Name>
         <Credential>
             <Id>23456</Id>
-            <Password encryption ="no">password2</Password>
+            <Password encryption="no">password2</Password>
         </Credential>
         <Phone>
             <Work>345678912</Work>
