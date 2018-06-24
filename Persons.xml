@@ -7,11 +7,11 @@
         </Name>
         <Credential>
             <Id>12345</Id>
-            <Password encryption="yes">password1</Password>
+            <Password Encryption="yes">password1</Password>
         </Credential>
         <Phone>
             <Work>123456789</Work>
-            <Cell provider="T-Mobile">234567891</Cell>
+            <Cell Provider="T-Mobile">234567891</Cell>
         </Phone>
         <Category>Friend</Category>
     </Person>
@@ -22,7 +22,7 @@
         </Name>
         <Credential>
             <Id>23456</Id>
-            <Password encryption="no">password2</Password>
+            <Password Encryption="no">password2</Password>
         </Credential>
         <Phone>
             <Work>345678912</Work>
@@ -37,7 +37,7 @@
         </Name>
         <Credential>
             <Id>34567</Id>
-            <Password encryption="yes">password3</Password>
+            <Password Encryption="yes">password3</Password>
         </Credential>
         <Phone>
             <Work>567891234</Work>
@@ -52,7 +52,7 @@
         </Name>
         <Credential>
             <Id>45678</Id>
-            <Password encryption="no">password4</Password>
+            <Password Encryption="no">password4</Password>
         </Credential>
         <Phone>
             <Work>789123456</Work>
@@ -67,7 +67,7 @@
         </Name>
         <Credential>
             <Id>56789</Id>
-            <Password encryption="yes">password5</Password>
+            <Password Encryption="yes">password5</Password>
         </Credential>
         <Phone>
             <Work>9123456789</Work>
