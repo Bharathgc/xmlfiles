@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="Persons">
+    <xsd:complexType>
+      <xsd:sequence>
+		<!-- unlimited number of person can occur -->
+        <xsd:element maxOccurs="unbounded" name="Person">
+          <xsd:complexType>
+            <xsd:sequence>
+			<!-- by default maxoccur and minoccur is 1, i.e name can occur only once-->
+              <xsd:element name="Name">
+                <xsd:complexType>
+				<!-- all element specifies that the child elements can appear in any order and that each child element can occur zero or one time. -->
+                  <xsd:all>
+                    <xsd:element name="First" type="xsd:string" />
+                    <xsd:element name="Last" type="xsd:string"  />
+                  </xsd:all>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="Credential">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="Id" type="xsd:unsignedInt" />
+                    <xsd:element name="Password">
+                      <xsd:complexType>
+                        <xsd:simpleContent>
+                          <xsd:extension base="xsd:string">
+                            <xsd:attribute name="encryption" type="xsd:string" use="optional" />
+                          </xsd:extension>
+                        </xsd:simpleContent>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="Phone">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="Work" type="xsd:string" />
+                    <xsd:element name="Cell">
+                      <xsd:complexType>
+                        <xsd:simpleContent>
+                          <xsd:extension base="xsd:int">
+                            <xsd:attribute name="provider" type="xsd:string" use="optional" />
+                          </xsd:extension>
+                        </xsd:simpleContent>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="Category">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="Friend"/>
+                    <xsd:enumeration value="Work"/>
+                    <xsd:enumeration value="Family"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
