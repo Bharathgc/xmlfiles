@@ -5,26 +5,22 @@
 <xsd:element name="Persons">
   <xsd:complexType>
     <xsd:sequence maxOccurs="unbounded">
-    <xsd:element name="Person" minOccurs="1" maxOccurs="unbounded">
+    <xsd:element name="Person" maxOccurs="unbounded">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element name="Name" minOccurs="1" maxOccurs="1">
+            <xsd:element name="Name" >
               <xsd:complexType>
                 <xsd:all>
-                <xsd:element name="First" type="xsd:string"
-            minOccurs="1" maxOccurs="1"/>
-              <xsd:element name="Last" type="xsd:string"
-            minOccurs="1" maxOccurs="1"/>
+                <xsd:element name="First" type="xsd:string"/>
+              <xsd:element name="Last" type="xsd:string"/>
               </xsd:all>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="Credential" minOccurs="1" maxOccurs="1" >
           <xsd:complexType>
             <xsd:sequence>
-              <xsd:element name="Id" type="xsd:string"
-            minOccurs="1" maxOccurs="1"/>
-              <xsd:element name="Password"
-            minOccurs="1" maxOccurs="1">
+              <xsd:element name="Id" type="xsd:string"/>
+              <xsd:element name="Password">
               <xsd:complexType>
               <xsd:simpleContent>
                         <xsd:extension base="xsd:string">       
@@ -36,16 +32,14 @@
               </xsd:sequence>
             </xsd:complexType>
           </xsd:element>
-        <xsd:element name="Phone" minOccurs="1" maxOccurs="1" >
+        <xsd:element name="Phone">
           <xsd:complexType>
           <xsd:sequence>
-            <xsd:element name="Work" type="xsd:string"
-            minOccurs="1" maxOccurs="1"/>
-          <xsd:element name="Cell" 
-          minOccurs="1" maxOccurs="1">
+            <xsd:element name="Work" type="xsd:string" />
+          <xsd:element name="Cell">
           <xsd:complexType>
             <xsd:simpleContent>
-                        <xsd:extension base="xsd:string"> 
+                <xsd:extension base="xsd:string"> 
                 <xsd:attribute name="Provider" type="xsd:string" use="optional"/>
               </xsd:extension>
               </xsd:simpleContent>
