@@ -1,85 +1,49 @@
-<?xml version="1.0" encoding = "utf-8" ?>
-<?xml-stylesheet type = "text/xsl" href = "Persons.xsd" ?>
-
+<?xml version="1.0"?>
 <Persons>
-	
     <Person>
         <Name>
-            <First>Bharath</First>
-            <Last>Gunari</Last>
+            <First>John</First>
+            <Last>Smith</Last>
         </Name>
         <Credential>
-            <Id>11111</Id>
-            <Password encryption="yes">AwesomeGuy</Password>
+            <Id>81949</Id>
+            <Password encryption="yes">ewilfhohiwe</Password>
         </Credential>
         <Phone>
-            <Work>2222222222</Work>
-            <Cell provider="T-Mobile">3333333333</Cell>
+            <Work>044-43218723</Work>
+            <Cell provider="T-Mobile">123456789</Cell>
         </Phone>
         <Category>Friend</Category>
     </Person>
-	
     <Person>
         <Name>
-            <First>Aravind</First>
-            <Last>Manoharan</Last>
+            <First>Peter</First>
+            <Last>Markle</Last>
         </Name>
         <Credential>
-            <Id>22222</Id>
-            <Password>RomeoRoomate</Password>
+            <Id>612547</Id>
+            <Password>uqwifywguebrfj</Password>
         </Credential>
         <Phone>
-            <Work>4444444444</Work>
-            <Cell provider="ATnT">5555555555</Cell>
+            <Work>3289649837</Work>
+            <Cell provider="Lyca">+17163497</Cell>
         </Phone>
         <Category>Family</Category>
     </Person>
-	
     <Person>
         <Name>
-            <First>Kausic</First>
-            <Last>Gunasekkar</Last>
+            <First>Jack</First>
+            <Last>Sparrow</Last>
         </Name>
         <Credential>
-            <Id>33333</Id>
-            <Password encryption="yes">wasteboy</Password>
+            <Id>902379</Id>
+            <Password encryption="no">uwifygi</Password>
         </Credential>
         <Phone>
-            <Work>6666666666</Work>
-            <Cell>7777777777</Cell>
+            <Work>37257</Work>
+            <Cell>89126384</Cell>
         </Phone>
         <Category>Work</Category>
     </Person>
-	
-    <Person>
-        <Name>
-            <First>Tony</First>
-            <Last>stark</Last>
-        </Name>
-        <Credential>
-            <Id>44444</Id>
-            <Password encryption="yes">MybestFriend</Password>
-        </Credential>
-        <Phone>
-            <Work>8888888888</Work>
-            <Cell>9999999999</Cell>
-        </Phone>
-        <Category>Friend</Category>
-    </Person>
     
-    <Person>
-        <Name>
-            <First>Namita</First>
-            <Last>Bellad</Last>
-        </Name>
-        <Credential>
-            <Id>55555</Id>
-            <Password encryption="yes">MindPrint</Password>
-        </Credential>
-        <Phone>
-            <Work>1234567891</Work>
-            <Cell provider = "Verizon">9876543219</Cell>
-        </Phone>
-        <Category>Family</Category>
-    </Person>
 </Persons>
