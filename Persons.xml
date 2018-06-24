@@ -2,7 +2,7 @@
 <?xml-stylesheet type = "text/xsl" href = "Persons.xsd" ?>
 
 <Persons>
-	<!-- First Person -->
+	
     <Person>
         <Name>
             <First>Bharath</First>
@@ -18,7 +18,7 @@
         </Phone>
         <Category>Friend</Category>
     </Person>
-	<!-- Second Person -->
+	
     <Person>
         <Name>
             <First>Aravind</First>
@@ -34,7 +34,7 @@
         </Phone>
         <Category>Family</Category>
     </Person>
-	<!-- Third Person without the provider info -->
+	
     <Person>
         <Name>
             <First>Kausic</First>
@@ -50,7 +50,7 @@
         </Phone>
         <Category>Work</Category>
     </Person>
-	<!-- Fourth Person without the provider info -->
+	
     <Person>
         <Name>
             <First>Tony</First>
@@ -66,7 +66,7 @@
         </Phone>
         <Category>Friend</Category>
     </Person>
-    <!-- fifth Person -->
+    
     <Person>
         <Name>
             <First>Namita</First>
